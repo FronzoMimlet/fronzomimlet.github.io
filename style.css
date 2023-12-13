@@ -1,58 +1,74 @@
+ :root{
+  --nice_dark_grey: #262626;
+  --not_quite_white: #fffbf0;
+  --text_fam: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --title_text_fam: 'Monaco', monospace;
+ }
+ 
  body,html {
-    background-color : #262626;
+    background-color : var(--nice_dark_grey);
   }
 
-  ul {
-    list-style-type: none;
+  .NavFrame {
+    width: 100%;
+    border: none;
+  }
+
+  .NavBar{
+    margin-left: 10%;
+    float: none;
+  }
+
+  nav u {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
   }
 
-  li {
-    float : left;   
+  nav ul{
+    padding: 0%;
   }
 
-  li a {
+  nav li {
+    float: left;
+    list-style-type: none;
+    padding-right: 10px;
+  }
+
+  @media (max-width: 1100px){
+    nav li {
+      float: left;
+      list-style-type: none;
+      padding-right: 30px;
+    }
+  }
+
+  nav li a {
     display: block;
-    padding: 8px;
     text-decoration: none;
-    color : #fffbf0;
+    color : var(--not_quite_white);
     text-shadow: 0px 0px 10px grey;
-    font-family: 'Monaco', monospace;
+    font-family: var(--title_text_fam);
   }
 
-  li a:hover {
+  nav li a:hover {
     color : grey;
     text-shadow: none;
   }
 
  .PageTitle {
-    font-family : 'Monaco', monospace;
-    color : #fffbf0;
+    font-family : var(--title_text_fam);
+    color : var(--not_quite_white);
     text-shadow: 0px 0px 15px grey;
   }
 
- .Head{
-    float: none;
-  }
-
-  .Head iframe{
-    border: none;
-    height: 40px; 
-  }
-
-  .Nav {
-    border : none;
-  }
-
   .Content{
-    color: #fffbf0;
+    color: var(--not_quite_white);
     margin: 0px;
     padding: 0px;
   }
   .Content h2{
-    color: #fffbf0;
+    color: var(--not_quite_white);
     text-decoration: overline;
     text-align: center;
     margin: 0px;
@@ -65,18 +81,37 @@
 
   .Content p{
     font-size: 1.3em;
-    color: #fffbf0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--not_quite_white);
+    font-family: var(--text_fam);
     margin-left: 30%;
     margin-right: 30%;
     word-wrap: break-word;
     text-align: justify;
     border: #262626;
   }
-  
+
   .Content img{
-    margin-left:auto;
-    margin-right: auto;
+    margin: auto;
     display: block;
     width: 40%
   }
+
+  @media (max-width: 1100px){
+    
+    .Content {
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .Content p{
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .Content img{
+      margin: 0%;
+      display: block;
+      width: 100%
+    }
+  }
+  
+  
