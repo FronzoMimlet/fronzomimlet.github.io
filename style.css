@@ -9,12 +9,12 @@
     background-color : var(--nice_dark_grey);
   }
 
-  .NavFrame {
+  .navFrame {
     width: 100%;
     border: none;
   }
 
-  .NavBar{
+  .navBar{
     margin-left: 10%;
     float: none;
   }
@@ -62,24 +62,24 @@
     text-shadow: 0px 0px 15px grey;
   }
 
-  .Content{
+  .content{
     color: var(--not_quite_white);
     margin: 0px;
     padding: 0px;
   }
-  .Content h2{
+  .content h2{
     color: var(--not_quite_white);
     text-decoration: overline;
     text-align: center;
     margin: 0px;
     padding: 0px;
   }
-  .Content h6{
+  .content h6{
     color: grey;
     text-align: center;
   }
 
-  .Content p{
+  .content p{
     font-size: 1.3em;
     color: var(--not_quite_white);
     font-family: var(--text_fam);
@@ -90,7 +90,7 @@
     border: #262626;
   }
 
-  .Content img{
+  .content img{
     margin: auto;
     display: block;
     width: 40%
@@ -98,16 +98,16 @@
 
   @media (max-width: 1100px){
     
-    .Content {
+    .content {
       margin-left: 10%;
       margin-right: 10%;
     }
-    .Content p{
+    .content p{
       margin-left: auto;
       margin-right: auto;
     }
 
-    .Content img{
+    .content img{
       margin: 0%;
       display: block;
       width: 100%

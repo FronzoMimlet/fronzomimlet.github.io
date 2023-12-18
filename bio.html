@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fraser M - BIO</title>  
     <link rel="stylesheet" href="style.css">
+    <script src="scrtips.js"></script> 
   </head>
   
   <body>
-    <iframe class="NavFrame" src="TitleAndNav.html" >
+    <iframe class="navFrame" src="TitleAndNav.html" >
       Your browser does not support iframes
    </iframe>
-
-    <div class="Content">
+   <!-- This page has som images so I'm gonna make a loading thing then a loaded content thing-->
+   <div class="content" id = "loadingIndicator">
+    <h6>loading, one min...</h6>
+   </div>
+    <div class="content" id="contentToLoad" style="display:none">
       <h2>BIO</h2>
       <h6>(rough idea of who I am)</h6>
       <p>I’m a computing science student at the University of Glasgow. It's stressful at times but I've enjoyed it thus far.</p>
