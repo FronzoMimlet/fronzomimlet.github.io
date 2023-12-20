@@ -1,7 +1,7 @@
  :root{
   --nice_dark_grey: #262626;
-  --not_quite_white: #fffbf0;
-  --text_fam: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --not_quite_white: #d5d5d5;
+  --text_fam: 'Courier New', monospace;
   --title_text_fam: 'Monaco', monospace;
  }
  
@@ -109,7 +109,6 @@
 
     .content img{
       margin: 0%;
-      display: block;
       width: 100%
     }
   }
