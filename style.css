@@ -9,12 +9,12 @@
     background-color : var(--nice_dark_grey);
   }
 
-  .navFrame {
+  .nav-frame {
     width: 100%;
     border: none;
   }
 
-  .navBar{
+  .nav-bar{
     margin-left: 10%;
     float: none;
   }
@@ -56,7 +56,7 @@
     text-shadow: none;
   }
 
- .PageTitle {
+ .page-title {
     font-family : var(--title_text_fam);
     color : var(--not_quite_white);
     text-shadow: 0px 0px 15px grey;
