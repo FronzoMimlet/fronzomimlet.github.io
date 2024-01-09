@@ -1,5 +1,6 @@
 
 window.addEventListener("load", (event) => {
+  // Used for waiting until contentToLoad has loaded until its displayed
   try{
     console.log("content loaded");
     document.getElementById("loadingIndicator").style.display="none";
