@@ -1,2 +1,2 @@
 # Personal Website
-personal website
+Very much under construction and contains an outdated version of my CV
