@@ -4,9 +4,12 @@
   --text_fam: 'Courier New', monospace;
   --title_text_fam: 'Monaco', monospace;
  }
- 
- body,html {
+ html {
+  height: 100%;
+ }
+ body {
     background-color : var(--nice_dark_grey);
+    margin: 0%;
   }
 
   .nav-frame {
