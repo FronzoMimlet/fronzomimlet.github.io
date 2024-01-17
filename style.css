@@ -7,19 +7,25 @@
  html {
   height: 100%;
  }
+
  body {
-    background-color : var(--nice_dark_grey);
+    background : var(--nice_dark_grey);
+    background-color: var(--nice_dark_grey);
     margin: 0%;
+    height: 100%;
   }
 
-  .nav-frame {
-    width: 100%;
-    border: none;
-  }
 
   .nav-bar{
     margin-left: 10%;
+    margin-bottom: 5%;
     float: none;
+  }
+
+  @media (max-width: 1100px){
+    .nav-bar{
+      margin-bottom: 10%;
+    }
   }
 
   nav u {
@@ -40,8 +46,6 @@
 
   @media (max-width: 1100px){
     nav li {
-      float: left;
-      list-style-type: none;
       padding-right: 30px;
     }
   }
@@ -115,5 +119,16 @@
       width: 100%
     }
   }
+
+  .fade-in {
+    animation : fadeIn 5s;
+  }
+
+  .fade-in--fast{
+    animation: fadeIn 0.2s;
+  }
   
-  
+  @keyframes fadeIn {
+    0%{ opacity: 0;}
+    100%{ opacity: 1;} 
+  }
