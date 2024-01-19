@@ -10,15 +10,15 @@
 
  body {
     background : var(--nice_dark_grey);
-    background-color: var(--nice_dark_grey);
-    margin: 0%;
-    height: 100%;
   }
 
-
+  .page-title{
+    margin-left: 5%
+  }
+  
   .nav-bar{
-    margin-left: 10%;
-    margin-bottom: 5%;
+    margin-left: 5%;
+    height: 1em;
     float: none;
   }
 
@@ -26,12 +26,6 @@
     .nav-bar{
       margin-bottom: 10%;
     }
-  }
-
-  nav u {
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
   }
 
   nav ul{
