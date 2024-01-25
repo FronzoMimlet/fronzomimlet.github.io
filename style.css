@@ -79,7 +79,8 @@
 
   @media (max-width: 1100px){
     nav li {
-      padding-right: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
     }
   }
 
