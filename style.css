@@ -152,6 +152,10 @@
     nav{
       align-items: center;
     }
+
+    nav li{
+      padding: 1em 1em
+    }
     .content{
       width: 90%;
     }
