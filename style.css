@@ -1,12 +1,25 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto+Slab&display=swap');
   :root{
     --nice_dark_grey: #262626;
     --not_quite_white: #d5d5d5;
-    --text_fam: 'Courier New', monospace;
-    --title_text_fam: 'Monaco', monospace;
+    --text_fam: 'Courier Prime', monospace;
+    --title_text_fam: 'Roboto Mono', monospace;
+  }
+
+  body, li{
+    font-family: var(--text_fam);
   }
 
   body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+    margin : 0%;
     background : var(--nice_dark_grey);
+   
   }
 
   a {
@@ -14,8 +27,7 @@
   }
   
   #logo {
-    height: 71px;
-    margin-left: 5%;
+    height: 4em;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -24,64 +36,27 @@
   #logo h1{
     font-family : var(--title_text_fam);
     color : var(--not_quite_white);
-    margin-bottom: 0%;
   }
 
   #logo img{
-    width: 75px;
-    height: 75px;
+    width: 4em;
+    height: 4em;
   }
 
-  @media (max-width: 1100px){
-    
-    #logo {
-      margin: 0%;
-      flex-direction: column-reverse;
-      align-items: center;
-      justify-content: center;
-      padding-top: 50px;
-      padding-bottom: 30px;
-    }
-
-    #logo h1{
-      display: none;
-    }
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: start;
   }
-
-
-  .nav-bar{
-    margin-left: 5%;
-    height: 1em;
-    float: none;
-  }
-
-  @media (max-width: 1100px) {
-    
-    .nav-bar {
-      margin: 0%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-
   nav ul{
-    padding-top: 0%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
   }
-
   nav li {
     float: left;
     list-style-type: none;
-    padding-right: 10px;
-  }
-
-  @media (max-width: 1100px){
-    nav li {
-    padding-left: 10px;
-    padding-right: 10px;
-    }
+    padding-right: 1em;
   }
 
   nav li a {
@@ -99,43 +74,58 @@
  
 
   .content{
+    display: flex;
+    flex-direction: column;
     color: var(--not_quite_white);
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 0px;
+    max-width: 50em;
+    gap: 3em;
   }
   .content h2{
+    margin:0%;
     color: var(--not_quite_white);
     text-decoration: overline;
     text-align: center;
-    margin-top: 30px;
     padding: 0px;
   }
   .content h6{
+    margin: 0%;
     color: grey;
     text-align: center;
   }
 
   .content p{
+    margin: 0%;
     font-size: 1.3em;
     color: var(--not_quite_white);
-    font-family: var(--text_fam);
     word-wrap: break-word;
     text-align: justify;
     border: #262626;
+
   }
 
-  .content img{
-    width: 100%;
-    height: 100%;
+
+  .content li{
+    list-style-type: none;
+  }
+ 
+  .content .content-image{
+   align-self: center; 
   }
 
-  @media (max-width: 1100px){
-    
-    .content {
-      margin-left: 9%;
-      margin-right: 9%;
-    }
+  .content .contenttitle{
+    display: flex;
+    flex-direction: column;
+  }
+  .content .subcontent{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .content ul{
+    padding: 0;
+    margin: 0;
+
   }
 
   .fade-in {
@@ -149,4 +139,28 @@
   @keyframes fadeIn {
     0%{ opacity: 0;}
     100%{ opacity: 1;} 
+  }
+
+  @media (max-width:600px){
+    :root{
+      font-size: 3.5vw;
+    }
+
+    body{
+      gap : 1em
+    }
+    nav{
+      align-items: center;
+    }
+    .content{
+      width: 90%;
+    }
+
+    .content .content-image{
+      width: 90%;
+    }
+
+    .content li{
+      list-style-type: none;
+    }
   }
