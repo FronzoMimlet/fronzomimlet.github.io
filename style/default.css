@@ -44,6 +44,7 @@ body{
     max-height: 7em;
 }
 
+
 .content{
     display: flex;
     flex-direction: column;
@@ -62,6 +63,11 @@ body{
     margin-top: 10em;
 }
 
+.content-section-subtitle{
+    align-self: center;
+    text-decoration: underline white;
+    font-size: 2em;
+}
 .content-section .content-section-title{
     display: flex;
     flex-direction: column;
@@ -73,7 +79,7 @@ body{
 .content-section .content-section-content{
     display: flex;
     justify-content: center;
-    max-width: 70%;
+    max-width: 60%;
 
 
 }
@@ -95,29 +101,27 @@ body{
     height: 20em;
 }
 
-.proj-title{
-    text-decoration: underline white;
-    margin-bottom: 1em;
-    padding-left: 4em;
-    padding-right: 4em;
-}
-.proj-title.prev{
-    text-align: end;
-}
-
 #projects{
     flex-direction: column;
 }
 .project{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 4em;
 }
 
+.project-content{
+    display: flex;
+    flex-direction: row;
+}
+
 .project .thumb-nail{
-    flex-direction: column;
     padding-right: 10em;
+}
+
+.project .info-section{
+    text-align: center;
 }
 .project .title{
     justify-self: center;
@@ -149,18 +153,14 @@ body{
     align-self: start;
 }
 
-.project.prev{
+.project.prev .project-content{
     flex-direction: row-reverse;
 }
 
 .project.prev .thumb-nail{
-    padding: 0;
+    padding-right: 0;
+    padding-left: 10em;
 }
-
-.project.prev .info-section{
-    padding-right: 4em;
-}
-
 @keyframes header_bottom {
     from{bottom: 10em; opacity: 0}
     to{bottom: 0; opacity: 1}
@@ -170,31 +170,28 @@ body{
     to{opacity: 1; padding-top: 0}
 }
 
-@media screen and (max-width: 1125px){
+@media screen and (max-width: 1125px) {
 
-   .margin-wrapper{
-       width: 50%;
-   }
-    #bio{
+    #bio {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    .content-section-title .title{
-        width : 50%
-    }
 
-    .project{
-        display: flex;
+    .project .project-content {
         flex-direction: column;
     }
 
-    .project .info{
-        margin: 0;
+    .project .thumb-nail {
+        align-self: center;
+        padding: 0
     }
 
-    .project .desc{
-        text-wrap: stable;
-        text-align: center;
+    .project.prev .project-content {
+        flex-direction: column;
+    }
+
+    .project.prev .thumb-nail{
+        padding: 0;
     }
 }
