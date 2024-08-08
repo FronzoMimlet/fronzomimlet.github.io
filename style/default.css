@@ -1,7 +1,8 @@
 
 p, h1, h2, h2, h3, h4, h5, h6 {
+    font-family: "JetBrains Mono", monospace;
     color: white;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 body{
@@ -53,9 +54,6 @@ body{
     align-items: center;
 }
 
-.margin-wrapper{
-    width: 1200px;
-}
 .content-section{
     display: flex;
     flex-direction: column;
@@ -68,10 +66,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    max-width: 50em;
 }
 
-.content-section-content{
+.content-section .content-section-content{
+    display: flex;
     justify-content: center;
+    max-width: 70%;
+
 
 }
 .content-section-title .title{
@@ -83,9 +86,8 @@ body{
 }
 
 #bio{
-    display: flex;
     flex-direction: row;
-    overflow: hidden;
+    align-items: center;
 }
 
 #bio img{
@@ -95,39 +97,40 @@ body{
 
 .proj-title{
     text-decoration: underline white;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 .proj-title.prev{
     text-align: end;
 }
+
+#projects{
+    flex-direction: column;
+}
 .project{
-    display: grid;
-    grid-template-rows: []2em []15em;
-    grid-template-columns: []20em []30em;
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    grid-column-gap: 10em;
-    grid-row-gap: 1em;
     margin-bottom: 4em;
 }
 
+.project .thumb-nail{
+    flex-direction: column;
+    padding-right: 10em;
+}
 .project .title{
-    grid-column-start: 1;
-    grid-row-start: 1;
     justify-self: center;
     text-align: center;
 }
 
 .project .info{
-    grid-row-start: 1;
-    grid-column-start: 2;
     text-wrap: nowrap;
     font-style: italic;
 }
 
 .project .image{
     display: flex;
-    grid-row-start: 2;
-    grid-column-start: 1;
     width: 20em;
     height: 15em;
     background: white;
@@ -143,25 +146,19 @@ body{
 .project .desc{
     grid-column-start: 2;
     grid-row-start: 2;
+    align-self: start;
 }
 
 .project.prev{
-    grid-template-columns: []30em []20em;
+    flex-direction: row-reverse;
 }
 
-.project.prev .title{
-    grid-column-start: 2;
-}
-.project.prev .image{
-    grid-column-start: 2;
-    justify-self: end;
+.project.prev .thumb-nail{
+    padding: 0;
 }
 
-.project.prev .info{
-    grid-column-start: 1;
-}
-.project.prev .desc{
-    grid-column-start: 1;
+.project.prev .info-section{
+    padding-right: 4em;
 }
 
 @keyframes header_bottom {
