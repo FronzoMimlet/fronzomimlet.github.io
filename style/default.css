@@ -1,5 +1,5 @@
 
-p, h1, h2, h2, h3, h4, h5, h6 {
+a, p, h1, h2, h2, h3, h4, h5, h6 {
     font-family: "JetBrains Mono", monospace;
     color: white;
     font-size: 1.5em;
@@ -153,6 +153,9 @@ body{
     align-self: start;
 }
 
+.project .desc a{
+    font-size: 1em;
+}
 .project.prev .project-content{
     flex-direction: row-reverse;
 }
@@ -160,6 +163,25 @@ body{
 .project.prev .thumb-nail{
     padding-right: 0;
     padding-left: 10em;
+}
+
+.pal{
+    margin-bottom: 2em;
+}
+.pal .top{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top .name{
+    padding-right: 2em;
+    margin: 0;
+}
+
+.pal .desc{
+    margin:0;
+    font-size: 1em;
 }
 @keyframes header_bottom {
     from{bottom: 10em; opacity: 0}
@@ -194,4 +216,6 @@ body{
     .project.prev .thumb-nail{
         padding: 0;
     }
+
+
 }
