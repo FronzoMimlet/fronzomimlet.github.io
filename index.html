@@ -1,44 +1,222 @@
-<!DOCTYPE html>
-<html>
-  
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="darkreader-lock">
-    <script src="scripts/scripts.js"></script>
-    <title>FM - HOME</title>  
-    <link rel="stylesheet" href="style.css">
-  </head>
-  
-  <body class="fade-in--fast">
-    
-    <nav>
-       <div id="logo" class="vert-align">
-        <h1>Fraser</h1>
-        <img src="static/pictures/singleStrawberry.png" alt="logo">
-        <h1>Miller</h1>
-      </div>
-     <ul>
-        <li><a href="index.html" target="_parent">HOME</a></li>
-        <li><a href="bio.html" target="_parent">BIO</a></li>
-        <li><a href="this_site.html" target="_parent">SITE_INFO</a></li>
-        <li><a href="static/files/Fraser_Miller_CV.pdf" download target="_parent">CV</a></li>
-    ` </ul>
-    </nav>
+<html lang="en-GB">
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style/default.css"></link>
+        <title>Fraser Miller</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono&family=Roboto+Slab&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+        function socialsTab(url){
+            window.open(url).focus();
+        }
+    </script>
+    <section class="header">
+        <img id="strawberry" src="pictures/header/singleStrawberry.webp" alt="strawberry">
+        <div id="header-name">
+            <img class="initials" src="pictures/header/f.webp" alt="f">
+            <img src="pictures/header/raser.webp" alt="raser">
+            <img id="initial-m" class="initials" src="pictures/header/m.webp" alt="m">
+            <img src="pictures/header/iller.webp" alt="iller">
+        </div>
 
-    <div class="content">
-      <div class="contenttitle">
-        <h2>IT MEANS 'STRAWBERRY' IN GAELIC</h2>
-        <h6>(By 'It' I mean 'Fraser' but I enjoy the drama of non specificity)</h6>
-      </div>
+    </section>
+    <section class="content">
+        <div class="content-section">
+            <div class="content-section-title">
+                <img class="title" src="pictures/bio/who.webp">
+                <img class="line" src="pictures/line.webp">
+            </div>
+            <div id="bio" class="content-section-content">
+                <img id="pf" src="pictures/bio/pen_mask_pf.webp">
+                <div class="section-text">
+                    <p>I'm a 4th year computing science student at University of Glasgow</p>
+                    <p>My interests include cycling, drawing(physical and digital) film-photography and UI design</p>
+                    <p>I'm involved with Glasgow University Tech Society (GUTS)</p>
+                </div>
+            </div>
+        </div>
 
-      <div class="subcontent">
-        <p>Hi :-)</p>
-        <p>My name is Fraser, and I'm currenty a 3rd year Comp Sci student. I made this website as a kind of base for anyone to gain a rough idea of who I am.</p>
-        <p>I plan to make this site something I can use in a personal and formal sense.</p>
-        <p>I've been meaning to make a website for a while, but now that I find <abbr title="Winter 2023 to be exact, and yes I know I'm using this element wrong">time</abbr>, I figured I'd make something simple and functional.</p>
-        <p>If your interested, here's a link to my <a href="https://github.com/FronzoMimlet">github</a>, at time of writing it has my SimpleBackup.sh script on it.</p>
-      </div>
-    </div>
-  </body>
+
+        <div class="content-section">
+            <div class="content-section-title">
+                <img class="title" src="pictures/projects/what.webp">
+                <img class="line" src="pictures/line.webp">
+            </div>
+            <div id="projects" class="content-section-content">
+                <h1 class="content-section-subtitle">Current Projects</h1>
+                <div class="project">
+                    <h2 class="project-title">THIS WEBSITE</h2>
+                    <div class="project-content">
+                        <div class="thumb-nail">
+                            <div class="image">
+                                <img src="pictures/projects/this_website.webp" alt="this_website"></img>
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <p class="info">Role: Design and Development</p>
+                            <p class="desc">I'll continue to expand the functionality and content as I see fit. I'm planning a blog feature which would allow me to e-ramble about things only I care about, such is the general purpose of this website.</p>
+                        </div>
+                    </div>
+
+                </div>
+               <div class="project">
+                    <h2 class="project-title">GUTS WEBSITE</h2>
+                    <div class="project-content">
+                        <div class="thumb-nail">
+                            <div class="image">
+                                <img src="pictures/projects/guts.webp" alt="this_website"></img>
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <p class="info">Role: Design and Development</p>
+                            <p class="desc">Working with <a href="http://lukeormiston.com">Luke</a>, we're making a revamped, more modern version of the Glasgow University Tech Society (GUTS) website, with the GUTS board 2024 as the client. It'll be a static website using HTML, CSS and JS with some cool functionality for rendering lists of events. I can't share any link at the moment but will do as soon as it's in a deployed state. This project thumbnail was chosen to honor of the vast number of pizzas brutally devoured at each hackathon. We thank them for their sacrifice.</p>
+                        </div>
+                    </div>
+               </div>
+
+                <div class="project">
+                    <h2 class="project-title">???? YEAR RALEIGH RECORD SPRINT</h2>
+                    <div class="project-content">
+                        <div class="thumb-nail">
+                            <div class="image">
+                                <img src="pictures/projects/record_sprint.webp" alt="record sprint">
+                            </div>
+                        </div>
+                       <div class="info-section">
+                           <p class="info">Role: Owner and Maintainer</p>
+                           <p class="desc"> This is a project that I hope will never become a past project, time and use be damned. There are plenty of things that need fixing; front-wheel bearings, the squeak in the bottom-bracket (not loud enough to make me think that the frame will split in twain beneath me thankfully), new breaks leavers, clip-in peddles, maybe some bullhorn handlebars, etc. This is my daily commuter, and it probably will be until it isn't.</p>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <h2 class="project-title">2002 DAWES MOJAVE</h2>
+                    <div class="project-content">
+                        <div class="thumb-nail">
+                            <div class="image">
+                                <img src="pictures/projects/dawes.webp" alt="dawes mojave">
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <p class="info">Role: Owner and Maintainer</p>
+                            <p class="desc">I fully believe this is one of the greatest bikes ever made. I have a bias, as this was my first 'real' bike. A 'hybrid' bike should fill the role of 'bike' in the broadest sense. This bike, through my own testing, is completely idiot-proof. I've never treated this bike nicely and always filled the position of 'bike' with little to no fuss. I think it's an amazing platform to work from, and I'm really excited to see what it turns into in the future. For now, it's a fantastic wheelbarrow with peddles.</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="content-section-subtitle">Past Projects</h1>
+                <div class="project prev">
+                    <h2 class="project-title">CRUK RESEARCH DATA-PORTAL PROTOTYPE</h2>
+                    <div class="project-content">
+                        <div class="thumb-nail">
+                            <div class="image">
+                                <img src="pictures/projects/beatson.webp" alt="this_website"></img>
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <p class="info">Role: Design and Development(Backend & Frontend)</p>
+                            <p class="desc">I was part of a team that was asked by Cancer Research UK Scotland (formerly known as the Beatson Institute) to create a web-app that functioned as a data-portal for research studies that enforced a standard meta-data structure within the context of cancer focused studies. The application was made using React as a frontend framework, Flask as a backend API and Neo4j, a graph-based database. The project was conducted through the University of Glasgow.<a href="https://github.com/FronzoMimlet/Beatson-Cancer-Research-Team-Project">Link to project repo.</a></p>
+                        </div>
+                    </div>
+               </div>
+               <div class="project prev">
+                    <h2 class="project-title">SIMPLE BACKUP BASH SCRIPT</h2>
+                    <div class="project-content">
+                        <div class="thumb-nail">
+                            <div class="image">
+                                <img src="pictures/projects/simplebackup.webp" alt="this_website"></img>
+                            </div>
+                        </div>
+                        <div class="info-section">
+                            <p class="info">Role: Design and Development</p>
+                            <p class="desc">I couldn't find a backup program that did exactly what I wanted a backup program to do at the time, so I made my own. This project may be simple (hence the name) but it let me get to grips with Bash and shell scripting in general. I do have future plans for this project, but those arnt too clear as of writing, thus it's current position in past projects.<a href="https://github.com/FronzoMimlet/SimpleHomeBackup">Link to project repo.</a></p>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div id="where" class="content-section-title">
+                <img class="title" src="pictures/where/where.webp" alt="Where?">
+                <img class="line" src="pictures/line.webp" alt="line">
+            </div>
+            <div class="content-section-content">
+                <div class="socials-list">
+                    <div class="socials-button" onclick="socialsTab('https://www.instagram.com/frasermiller___?igsh=MWx2bXR0OTljMHNvcg==')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/insta.webp" alt="insta">
+                        </div>
+                        <h2 class="name">Instagram</h2>
+                    </div>
+                    <div class="socials-button rev" onclick="socialsTab('https://www.linkedin.com/in/fraser-m1ller/')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/linkedin.webp" alt="linkedin">
+                        </div>
+                        <h2 class="name">Linked In</h2>
+                    </div>
+                    <div class="socials-button" onclick="socialsTab('https://github.com/FronzoMimlet')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/github.webp">
+                        </div>
+                        <h2 class="name">GitHub</h2>
+                    </div>
+                    <div class="socials-button rev" onclick="socialsTab('https://www.deviantart.com/frasermiller')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/deviant.webp" alt="deviantArt">
+                        </div>
+                        <h2 class="name">Deviant Art</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div id="pals" class="content-section-title">
+                <img class="title" src="pictures/pals.webp" alt="pals <3">
+                <img class="line" src="pictures/line.webp" alt="line">
+            </div>
+            <div class="content-section-content>">
+                <div class="pal">
+                    <div class="top">
+                        <h2 class="name">Andrei</h2>
+                        <a class="web-link" href="https://andreig.dev/">https://andreig.dev/</a>
+                    </div>
+                    <p class="desc">Graphics programming, good cook</p>
+                </div>
+                <div class="pal">
+                    <div class="top">
+                        <h2 class="name">Ben</h2>
+                        <a class="web-link" href="https://vyrz.dev/">https://vyrz.dev/</a>
+                    </div>
+                    <p class="desc">Rust enjoyer, spontaneous adventure haver</p>
+                </div>
+                <div class="pal">
+                    <div class="top">
+                        <h2 class="name">Luke</h2>
+                        <a class="web-link" href="https://lukeormiston.com/">https://lukeormiston.com/</a>
+                    </div>
+                    <p class="desc">Bike go vroom</p>
+                </div>
+                <div class="pal">
+                    <div class="top">
+                        <h2 class="name">Mark</h2>
+                        <a class="web-link" href="https://www.linkedin.com/in/mark-turnbull-68a150244/">https://www.linkedin.com/in/mark-turnbull-68a150244/</a>
+                    </div>
+                    <p class="desc">Amazing guy, just needs a domain...</p>
+                </div>
+                <div class="pal">
+                    <div class="top">
+                        <h2 class="name">Nour</h2>
+                        <a class="web-link" href="https://nourel.dev/">https://nourel.dev/</a>
+                    </div>
+                    <p class="desc">Makes a good UI</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </body>
 </html>

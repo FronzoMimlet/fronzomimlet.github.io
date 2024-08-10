@@ -1,0 +1,265 @@
+
+a, p, h1, h2, h2, h3, h4, h5, h6 {
+    font-family: "JetBrains Mono", monospace;
+    color: white;
+    font-size: 1em;
+}
+
+body{
+    background: #202020;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#strawberry {
+    max-height: 9em;
+    animation-name: header_top;
+    animation-delay: 1s;
+    animation-duration: .5s;
+    animation-fill-mode: backwards;
+}
+
+#header-name{
+    position: relative;
+    margin-top: -3em;
+    display: grid;
+    grid-template-columns: []2em []8em []7em []10em;
+    animation-name: header_bottom;
+    animation-fill-mode: backwards;
+    animation-duration: 1s;
+}
+
+#header-name img{
+    align-self: end;
+    max-width:8em;
+}
+#header-name img.initials{
+    max-height: 13em;
+}
+#header-name #initial-m{
+    max-height: 7em;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    animation-name: content;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: backwards;
+    align-items: center;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.content-section-subtitle{
+    align-self: center;
+    text-decoration: underline white;
+    font-size: 2em;
+}
+.content-section .content-section-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 50em;
+}
+
+.content-section .content-section-content{
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+
+
+}
+.content-section-title .title{
+    width: 20%
+}
+
+.content-section-title .line{
+    width: 100%;
+}
+
+#bio{
+    flex-direction: row;
+    align-items: center;
+}
+
+#bio img{
+    width: 30em;
+    height: 20em;
+}
+
+#projects{
+    flex-direction: column;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.project .thumb-nail{
+    padding-right: 6em;
+}
+
+.project .info-section{
+    text-align: center;
+}
+.project .title{
+    justify-self: center;
+    text-align: center;
+}
+
+.project .info{
+    text-wrap: nowrap;
+    font-style: italic;
+}
+
+.project .image{
+    display: flex;
+    width: 20em;
+    height: 15em;
+    background: none;
+    border-radius: 10%;
+}
+
+.project .image img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: inherit;
+}
+
+.project .desc{
+    font-size: .8em;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    align-self: start;
+}
+
+.project .desc a{
+    font-size: .9em;
+}
+.project.prev .project-content{
+    flex-direction: row-reverse;
+}
+
+.project.prev .thumb-nail{
+    padding-right: 0;
+    padding-left: 6em;
+}
+
+#where .title{
+    width: 30%;
+}
+.socials-list{
+    display: flex;
+    flex-direction: column;
+}
+.socials-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.socials-button.rev{
+    flex-direction: row-reverse;
+}
+
+.socials-button:hover{
+    cursor: pointer;
+    background: #323232;
+}
+
+.socials-button .logo{
+    display: flex;
+    width: 10em;
+    height: 10em;
+    padding-right: 5em;
+}
+
+.socials-button.rev .logo{
+    padding-right: 0;
+    padding-left: 5em;
+}
+.socials-button .logo img{
+    object-fit: contain;
+    width: 100%;
+}
+
+#pals .title{
+    width: 40%;
+}
+
+.pal{
+    margin-bottom: 2em;
+}
+.pal .top{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.top .name{
+    padding-right: 2em;
+    margin: 0;
+}
+
+.pal .desc{
+    margin:0;
+    font-size: 1em;
+}
+@keyframes header_bottom {
+    from{bottom: 10em; opacity: 0}
+    to{bottom: 0; opacity: 1}
+}
+@keyframes content {
+    from{opacity: 0; padding-top: 3em}
+    to{opacity: 1; padding-top: 0}
+}
+
+@media screen and (max-width: 1125px) {
+
+    #bio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .project .project-content {
+        flex-direction: column;
+    }
+
+    .project .thumb-nail {
+        align-self: center;
+        padding: 0
+    }
+
+    .project.prev .project-content {
+        flex-direction: column;
+    }
+
+    .project.prev .thumb-nail{
+        padding: 0;
+    }
+
+
+}
