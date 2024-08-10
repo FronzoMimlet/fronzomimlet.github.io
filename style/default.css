@@ -137,7 +137,7 @@ body{
     display: flex;
     width: 20em;
     height: 15em;
-    background: white;
+    background: none;
     border-radius: 10%;
 }
 
@@ -163,6 +163,49 @@ body{
 .project.prev .thumb-nail{
     padding-right: 0;
     padding-left: 10em;
+}
+
+#where .title{
+    width: 30%;
+}
+.socials-list{
+    display: flex;
+    flex-direction: column;
+}
+.socials-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5%;
+}
+
+.socials-button.rev{
+    flex-direction: row-reverse;
+}
+
+.socials-button:hover{
+    cursor: pointer;
+    background: #323232;
+}
+
+.socials-button .logo{
+    display: flex;
+    width: 10em;
+    height: 10em;
+    padding-right: 5em;
+}
+
+.socials-button.rev .logo{
+    padding-right: 0;
+    padding-left: 5em;
+}
+.socials-button .logo img{
+    object-fit: contain;
+    width: 100%;
+}
+
+#pals .title{
+    width: 40%;
 }
 
 .pal{

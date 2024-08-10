@@ -8,6 +8,11 @@
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Mono&family=Roboto+Slab&display=swap" rel="stylesheet">
     </head>
     <body>
+    <script>
+        function socialsTab(url){
+            window.open(url).focus();
+        }
+    </script>
     <section class="header">
         <img id="strawberry" src="pictures/header/singleStrawberry.webp" alt="strawberry">
         <div id="header-name">
@@ -62,12 +67,12 @@
                     <div class="project-content">
                         <div class="thumb-nail">
                             <div class="image">
-                                <img src="pictures/projects/this_website.webp" alt="this_website"></img>
+                                <img src="pictures/projects/guts.webp" alt="this_website"></img>
                             </div>
                         </div>
                         <div class="info-section">
                             <p class="info">Role: Design and Development</p>
-                            <p class="desc">Working with <a href="http://lukeormiston.com">Luke</a>, we're making a revamped, more modern version of the Glasgow University Tech Society (GUTS) website, with the GUTS board 2024 as the client. It'll be a static website using HTML, CSS and JS with some cool functionality for rendering lists of events. I can't share any link at the moment but will do as soon as it's in a deployed state.</p>
+                            <p class="desc">Working with <a href="http://lukeormiston.com">Luke</a>, we're making a revamped, more modern version of the Glasgow University Tech Society (GUTS) website, with the GUTS board 2024 as the client. It'll be a static website using HTML, CSS and JS with some cool functionality for rendering lists of events. I can't share any link at the moment but will do as soon as it's in a deployed state. This project thumbnail was chosen to honor of the vast number of pizzas brutally devoured at each hackathon. We thank them for their sacrifice.</p>
                         </div>
                     </div>
                </div>
@@ -92,7 +97,7 @@
                     <div class="project-content">
                         <div class="thumb-nail">
                             <div class="image">
-                                <img src="pictures/projects/dawes-mojave.webp" alt="dawes mojave">
+                                <img src="pictures/projects/dawes.webp" alt="dawes mojave">
                             </div>
                         </div>
                         <div class="info-section">
@@ -112,7 +117,7 @@
                         </div>
                         <div class="info-section">
                             <p class="info">Role: Design and Development(Backend & Frontend)</p>
-                            <p class="desc">Part of a team that was asked by Cancer Research UK Scotland (formerly known as the Beatson Institute) to create a web-app that functioned as a data-portal for research studies that enforced a standard meta-data structure within the context of cancer focused studies. The application was made using React as a frontend framework, Flask as a backend API and Neo4j, a graph-based database. The project was conducted through the University of Glasgow. </p>
+                            <p class="desc">I was part of a team that was asked by Cancer Research UK Scotland (formerly known as the Beatson Institute) to create a web-app that functioned as a data-portal for research studies that enforced a standard meta-data structure within the context of cancer focused studies. The application was made using React as a frontend framework, Flask as a backend API and Neo4j, a graph-based database. The project was conducted through the University of Glasgow.<a href="https://github.com/FronzoMimlet/Beatson-Cancer-Research-Team-Project">Link to project repo.</a></p>
                         </div>
                     </div>
                </div>
@@ -126,7 +131,7 @@
                         </div>
                         <div class="info-section">
                             <p class="info">Role: Design and Development</p>
-                            <p class="desc">I couldn't find a backup program that did exactly what I wanted a backup program to do at the time, so I made my own. This project may be simple (hence the name) but it let me get to grips with Bash and shell scripting in general. I do have future plans for this project, but those arnt too clear as of writing, thus it's current position in past projects.</p>
+                            <p class="desc">I couldn't find a backup program that did exactly what I wanted a backup program to do at the time, so I made my own. This project may be simple (hence the name) but it let me get to grips with Bash and shell scripting in general. I do have future plans for this project, but those arnt too clear as of writing, thus it's current position in past projects.<a href="https://github.com/FronzoMimlet/SimpleHomeBackup">Link to project repo.</a></p>
                         </div>
                     </div>
                </div>
@@ -134,18 +139,43 @@
         </div>
 
         <div class="content-section">
-            <div class="content-section-title">
-                <img class="title" src="" alt="Where?">
+            <div id="where" class="content-section-title">
+                <img class="title" src="pictures/where/where.webp" alt="Where?">
                 <img class="line" src="pictures/line.webp" alt="line">
             </div>
             <div class="content-section-content">
-
+                <div class="socials-list">
+                    <div class="socials-button" onclick="socialsTab('https://www.instagram.com/frasermiller___?igsh=MWx2bXR0OTljMHNvcg==')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/insta.webp" alt="insta">
+                        </div>
+                        <h2 class="name">Instagram</h2>
+                    </div>
+                    <div class="socials-button rev" onclick="socialsTab('https://www.linkedin.com/in/fraser-m1ller/')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/linkedin.webp" alt="linkedin">
+                        </div>
+                        <h2 class="name">Linked In</h2>
+                    </div>
+                    <div class="socials-button" onclick="socialsTab('https://github.com/FronzoMimlet')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/github.webp">
+                        </div>
+                        <h2 class="name">GitHub</h2>
+                    </div>
+                    <div class="socials-button rev" onclick="socialsTab('https://www.deviantart.com/frasermiller')">
+                        <div class="logo">
+                            <img src="pictures/where/logos/deviant.webp" alt="deviantArt">
+                        </div>
+                        <h2 class="name">Deviant Art</h2>
+                    </div>
+                </div>
             </div>
         </div>
 
         <div class="content-section">
-            <div class="content-section-title">
-                <img class="title" src="" alt="pals <3">
+            <div id="pals" class="content-section-title">
+                <img class="title" src="pictures/pals.webp" alt="pals <3">
                 <img class="line" src="pictures/line.webp" alt="line">
             </div>
             <div class="content-section-content>">
